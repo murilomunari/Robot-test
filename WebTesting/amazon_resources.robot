@@ -2,7 +2,7 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${URL}     https://www.amazon.com.br
+${URL}     https://www.amazon.com.br/gp/goldbox
 
 
 *** Keywords ***
@@ -16,6 +16,7 @@ Fechar o navegador
 Acessar a home page do site Amazon.com.br
     Open Browser    ${URL}    chrome
     Maximize Browser Window
+    Sleep    5s 
 
 Entrar no menu "Ofertas do Dia"
     Click Link    xpath=//a[contains(text(), 'Ofertas do Dia')]
@@ -30,9 +31,11 @@ Verificar se aparece a categoria "Para Você"
     Page Should Contain    Para Você
 
 Digitar o nome de produto "Iphone 16" no campo de pesquisa
+    Wait Until Element Is Visible    id=twotabsearchtextbox    10s
     Input Text    id=twotabsearchtextbox    Iphone 16
 
 Clicar no botão de pesquisa
+    Wait Until Element Is Visible    id=nav-search-submit-button    10s
     Click Button    id=nav-search-submit-button
 
 Verificar o resultado da pesquisa se esta listando o produto pesquisado
