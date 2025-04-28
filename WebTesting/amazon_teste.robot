@@ -10,14 +10,14 @@ Test Teardown   Fechar o navegador
 *** Test Cases ***
 
 Caso de Teste 01 - Acesso ao menu "Ofertas do Dia"
-    [Documentation]    Teste de acesso ao menu "Ofertas do Dia" na Amazon
-    ...                Este teste verifica se o menu "Ofertas do Dia" está acessível e se a página carrega corretamente.
-    [Tags]             menus       ofertas_dia
+    [Documentation]    Teste de acesso ao menu "Ofertas do Dia" e "Cupons" na Amazon
+    [Tags]             menus    ofertas_dia    cupons
     Acessar a home page do site Amazon.com.br
     Entrar no menu "Ofertas do Dia"
     Verificar se o título da página fica "Ofertas e Promoções | Amazon.com.br"
     Verificar se aparece a frase "Ofertas e Promoções"
-    Verificar se aparece a categoria "Para Você"
+    Entrar no menu "Cupons"
+    
 
 
 Caso de Teste 02 - Pesquisa de um Produto

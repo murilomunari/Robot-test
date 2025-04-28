@@ -1,191 +1,227 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.11.9 on win32)" generated="2025-04-28T10:51:11.411243" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.11.9 on win32)" generated="2025-04-28T13:04:44.849691" rpa="false" schemaversion="5">
 <suite id="s1" name="Amazon Teste" source="C:\Users\munar\Desktop\robot_framework\Robot-test\WebTesting\amazon_teste.robot">
 <test id="s1-t1" name="Caso de Teste 01 - Acesso ao menu &quot;Ofertas do Dia&quot;" line="12">
 <kw name="Abrir o navegador" owner="amazon_resources" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-04-28T10:51:12.690415" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.br/gp/goldbox'.</msg>
+<msg time="2025-04-28T13:04:45.092179" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.br/'.</msg>
 <arg>${URL}</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-04-28T10:51:12.690415" elapsed="3.627245"/>
-</kw>
-<status status="PASS" start="2025-04-28T10:51:12.674659" elapsed="3.643001"/>
-</kw>
-<kw name="Acessar a home page do site Amazon.com.br" owner="amazon_resources">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-04-28T10:51:16.320633" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.br/gp/goldbox'.</msg>
-<arg>${URL}</arg>
-<arg>chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-04-28T10:51:16.320633" elapsed="3.774229"/>
+<status status="PASS" start="2025-04-28T13:04:45.092179" elapsed="2.057034"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-04-28T10:51:20.094862" elapsed="0.065200"/>
+<status status="PASS" start="2025-04-28T13:04:47.149213" elapsed="0.033095"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-28T10:51:25.161442" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
+<msg time="2025-04-28T13:04:50.185972" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-28T10:51:20.160062" elapsed="5.001380"/>
+<status status="PASS" start="2025-04-28T13:04:47.184320" elapsed="3.001652"/>
 </kw>
-<status status="PASS" start="2025-04-28T10:51:16.319513" elapsed="8.841929"/>
+<status status="PASS" start="2025-04-28T13:04:45.090182" elapsed="5.095790"/>
+</kw>
+<kw name="Acessar a home page do site Amazon.com.br" owner="amazon_resources">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-04-28T13:04:50.188993" level="INFO">Opening url 'https://www.amazon.com.br/'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-04-28T13:04:50.187979" elapsed="0.659585"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-28T13:04:50.847564" elapsed="0.035483"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-28T13:04:53.884810" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-28T13:04:50.883047" elapsed="3.001763"/>
+</kw>
+<status status="PASS" start="2025-04-28T13:04:50.187979" elapsed="3.696831"/>
 </kw>
 <kw name="Entrar no menu &quot;Ofertas do Dia&quot;" owner="amazon_resources">
-<kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2025-04-28T10:51:25.161442" level="INFO">Clicking link 'xpath=//a[contains(text(), 'Ofertas do Dia')]'.</msg>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//a[contains(text(), 'Ofertas do Dia')]</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-28T10:51:25.161442" elapsed="1.093611"/>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-28T13:04:53.885825" elapsed="0.039315"/>
 </kw>
-<status status="PASS" start="2025-04-28T10:51:25.161442" elapsed="1.093611"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-28T13:04:53.925140" level="INFO">Clicking element 'xpath=//a[contains(text(), 'Ofertas do Dia')]'.</msg>
+<arg>xpath=//a[contains(text(), 'Ofertas do Dia')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-28T13:04:53.925140" elapsed="1.408728"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-28T13:04:58.334214" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-28T13:04:55.333868" elapsed="3.000346"/>
+</kw>
+<status status="PASS" start="2025-04-28T13:04:53.885825" elapsed="4.448389"/>
 </kw>
 <kw name="Verificar se o título da página fica &quot;Ofertas e Promoções | Amazon.com.br&quot;" owner="amazon_resources">
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-04-28T10:51:26.320402" level="INFO">Page title is 'Ofertas e Promoções | Amazon.com.br'.</msg>
+<msg time="2025-04-28T13:04:58.352432" level="INFO">Page title is 'Ofertas e Promoções | Amazon.com.br'.</msg>
 <arg>Ofertas e Promoções | Amazon.com.br</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-04-28T10:51:26.257085" elapsed="0.063317"/>
+<status status="PASS" start="2025-04-28T13:04:58.336793" elapsed="0.016640"/>
 </kw>
-<status status="PASS" start="2025-04-28T10:51:26.256073" elapsed="0.064329"/>
+<status status="PASS" start="2025-04-28T13:04:58.334214" elapsed="0.019219"/>
 </kw>
 <kw name="Verificar se aparece a frase &quot;Ofertas e Promoções&quot;" owner="amazon_resources">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-04-28T10:51:26.370052" level="INFO">Current page contains text 'Ofertas e Promoções'.</msg>
+<msg time="2025-04-28T13:04:58.383525" level="INFO">Current page contains text 'Ofertas e Promoções'.</msg>
 <arg>Ofertas e Promoções</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-04-28T10:51:26.326288" elapsed="0.043764"/>
+<status status="PASS" start="2025-04-28T13:04:58.353433" elapsed="0.030092"/>
 </kw>
-<status status="PASS" start="2025-04-28T10:51:26.326288" elapsed="0.043764"/>
+<status status="PASS" start="2025-04-28T13:04:58.353433" elapsed="0.030092"/>
 </kw>
-<kw name="Verificar se aparece a categoria &quot;Para Você&quot;" owner="amazon_resources">
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-04-28T10:51:26.714785" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-04-28T10:51:26.714785" level="FAIL">Page should have contained text 'Para Você' but did not.</msg>
-<arg>Para Você</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="FAIL" start="2025-04-28T10:51:26.371446" elapsed="0.398674">Page should have contained text 'Para Você' but did not.</status>
+<kw name="Entrar no menu &quot;Cupons&quot;" owner="amazon_resources">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(text(), 'Cupons')]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-28T13:04:58.385536" elapsed="0.026140"/>
 </kw>
-<status status="FAIL" start="2025-04-28T10:51:26.370052" elapsed="0.400068">Page should have contained text 'Para Você' but did not.</status>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-28T13:04:58.412674" level="INFO">Clicking element 'xpath=//button[contains(text(), 'Cupons')]'.</msg>
+<arg>xpath=//button[contains(text(), 'Cupons')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-28T13:04:58.411676" elapsed="0.159436"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-28T13:05:01.572794" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-28T13:04:58.572109" elapsed="3.000685"/>
+</kw>
+<status status="PASS" start="2025-04-28T13:04:58.385030" elapsed="3.187764"/>
 </kw>
 <kw name="Fechar o navegador" owner="amazon_resources" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-04-28T10:51:26.771129" elapsed="2.207960"/>
+<status status="PASS" start="2025-04-28T13:05:01.573810" elapsed="2.254561"/>
 </kw>
-<status status="PASS" start="2025-04-28T10:51:26.771129" elapsed="2.207960"/>
+<status status="PASS" start="2025-04-28T13:05:01.573810" elapsed="2.254561"/>
 </kw>
-<doc>Teste de acesso ao menu "Ofertas do Dia" na Amazon
-Este teste verifica se o menu "Ofertas do Dia" está acessível e se a página carrega corretamente.</doc>
+<doc>Teste de acesso ao menu "Ofertas do Dia" e "Cupons" na Amazon</doc>
+<tag>cupons</tag>
 <tag>menus</tag>
 <tag>ofertas_dia</tag>
-<status status="FAIL" start="2025-04-28T10:51:12.674659" elapsed="16.304430">Page should have contained text 'Para Você' but did not.</status>
+<status status="PASS" start="2025-04-28T13:04:45.087183" elapsed="18.742137"/>
 </test>
 <test id="s1-t2" name="Caso de Teste 02 - Pesquisa de um Produto" line="23">
 <kw name="Abrir o navegador" owner="amazon_resources" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-04-28T10:51:28.979089" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.br/gp/goldbox'.</msg>
+<msg time="2025-04-28T13:05:03.832308" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.br/'.</msg>
 <arg>${URL}</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-04-28T10:51:28.979089" elapsed="2.636679"/>
-</kw>
-<status status="PASS" start="2025-04-28T10:51:28.979089" elapsed="2.636679"/>
-</kw>
-<kw name="Acessar a home page do site Amazon.com.br" owner="amazon_resources">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-04-28T10:51:31.618968" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.br/gp/goldbox'.</msg>
-<arg>${URL}</arg>
-<arg>chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-04-28T10:51:31.617957" elapsed="3.296284"/>
+<status status="PASS" start="2025-04-28T13:05:03.832308" elapsed="2.185102"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-04-28T10:51:34.915618" elapsed="0.087328"/>
+<status status="PASS" start="2025-04-28T13:05:06.018046" elapsed="0.035375"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-28T10:51:40.004362" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
+<msg time="2025-04-28T13:05:09.053942" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-28T10:51:35.002946" elapsed="5.001416"/>
+<status status="PASS" start="2025-04-28T13:05:06.053421" elapsed="3.000521"/>
 </kw>
-<status status="PASS" start="2025-04-28T10:51:31.616838" elapsed="8.387524"/>
+<status status="PASS" start="2025-04-28T13:05:03.832308" elapsed="5.221634"/>
+</kw>
+<kw name="Acessar a home page do site Amazon.com.br" owner="amazon_resources">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-04-28T13:05:09.055964" level="INFO">Opening url 'https://www.amazon.com.br/'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-04-28T13:05:09.055964" elapsed="0.961126"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-28T13:05:10.017090" elapsed="0.010442"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-28T13:05:13.027946" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-28T13:05:10.027532" elapsed="3.000414"/>
+</kw>
+<status status="PASS" start="2025-04-28T13:05:09.054965" elapsed="3.972981"/>
 </kw>
 <kw name="Digitar o nome de produto &quot;Iphone 16&quot; no campo de pesquisa" owner="amazon_resources">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>id=twotabsearchtextbox</arg>
-<arg>10s</arg>
+<arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-04-28T10:51:40.004362" elapsed="0.092804"/>
+<status status="PASS" start="2025-04-28T13:05:13.028540" elapsed="0.033966"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-04-28T10:51:40.097166" level="INFO">Typing text 'Iphone 16' into text field 'id=twotabsearchtextbox'.</msg>
+<msg time="2025-04-28T13:05:13.062506" level="INFO">Typing text 'Iphone 16' into text field 'id=twotabsearchtextbox'.</msg>
 <arg>id=twotabsearchtextbox</arg>
 <arg>Iphone 16</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-28T10:51:40.097166" elapsed="0.195311"/>
+<status status="PASS" start="2025-04-28T13:05:13.062506" elapsed="0.120972"/>
 </kw>
-<status status="PASS" start="2025-04-28T10:51:40.004362" elapsed="0.288115"/>
+<status status="PASS" start="2025-04-28T13:05:13.028540" elapsed="0.155938"/>
 </kw>
 <kw name="Clicar no botão de pesquisa" owner="amazon_resources">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>id=nav-search-submit-button</arg>
-<arg>10s</arg>
+<arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-04-28T10:51:40.293502" elapsed="0.015883"/>
+<status status="PASS" start="2025-04-28T13:05:13.186478" elapsed="0.026071"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-04-28T10:51:40.309385" level="INFO">Clicking button 'id=nav-search-submit-button'.</msg>
+<msg time="2025-04-28T13:05:13.213570" level="INFO">Clicking button 'id=nav-search-submit-button'.</msg>
 <arg>id=nav-search-submit-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-28T10:51:40.309385" elapsed="1.530917"/>
+<status status="PASS" start="2025-04-28T13:05:13.212549" elapsed="1.663812"/>
 </kw>
-<status status="PASS" start="2025-04-28T10:51:40.292477" elapsed="1.547825"/>
+<status status="PASS" start="2025-04-28T13:05:13.185478" elapsed="1.690883"/>
 </kw>
 <kw name="Verificar o resultado da pesquisa se esta listando o produto pesquisado" owner="amazon_resources">
-<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
-<msg time="2025-04-28T10:51:42.072096" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-04-28T10:51:42.073103" level="FAIL">Element with locator 'locator' not found.</msg>
-<arg>locator</arg>
-<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
-<status status="FAIL" start="2025-04-28T10:51:41.841302" elapsed="0.277662">Element with locator 'locator' not found.</status>
-</kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-04-28T13:05:14.931783" level="INFO">Current page contains text 'Iphone 16'.</msg>
 <arg>Iphone 16</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2025-04-28T10:51:42.118964" elapsed="0.000000"/>
+<status status="PASS" start="2025-04-28T13:05:14.877367" elapsed="0.054416"/>
 </kw>
-<status status="FAIL" start="2025-04-28T10:51:41.841302" elapsed="0.277662">Element with locator 'locator' not found.</status>
+<status status="PASS" start="2025-04-28T13:05:14.877367" elapsed="0.054416"/>
 </kw>
 <kw name="Fechar o navegador" owner="amazon_resources" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-04-28T10:51:42.120045" elapsed="2.206777"/>
+<status status="PASS" start="2025-04-28T13:05:14.932330" elapsed="2.243585"/>
 </kw>
-<status status="PASS" start="2025-04-28T10:51:42.120045" elapsed="2.206777"/>
+<status status="PASS" start="2025-04-28T13:05:14.932330" elapsed="2.244532"/>
 </kw>
 <doc>Teste de pesquisa de um produto na Amazon</doc>
 <tag>busca_produtos</tag>
 <tag>iphone_16</tag>
-<status status="FAIL" start="2025-04-28T10:51:28.979089" elapsed="15.347733">Element with locator 'locator' not found.</status>
+<status status="PASS" start="2025-04-28T13:05:03.830268" elapsed="13.346594"/>
 </test>
 <doc>Essa suite testa o site da Amazon.com.br utilizando o Robot Framework.</doc>
-<status status="FAIL" start="2025-04-28T10:51:11.411243" elapsed="32.915579"/>
+<status status="PASS" start="2025-04-28T13:04:44.850673" elapsed="32.329147"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="2" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">busca_produtos</stat>
-<stat pass="0" fail="1" skip="0">iphone_16</stat>
-<stat pass="0" fail="1" skip="0">menus</stat>
-<stat pass="0" fail="1" skip="0">ofertas_dia</stat>
+<stat pass="1" fail="0" skip="0">busca_produtos</stat>
+<stat pass="1" fail="0" skip="0">cupons</stat>
+<stat pass="1" fail="0" skip="0">iphone_16</stat>
+<stat pass="1" fail="0" skip="0">menus</stat>
+<stat pass="1" fail="0" skip="0">ofertas_dia</stat>
 </tag>
 <suite>
-<stat name="Amazon Teste" id="s1" pass="0" fail="2" skip="0">Amazon Teste</stat>
+<stat name="Amazon Teste" id="s1" pass="2" fail="0" skip="0">Amazon Teste</stat>
 </suite>
 </statistics>
 <errors>
