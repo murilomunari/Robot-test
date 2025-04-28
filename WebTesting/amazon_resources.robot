@@ -39,4 +39,5 @@ Clicar no botão de pesquisa
     Click Button    id=nav-search-submit-button
 
 Verificar o resultado da pesquisa se esta listando o produto pesquisado
+    Capture Element Screenshot    locator
     Page Should Contain    Iphone 16
